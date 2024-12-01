@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Arquitecturas de Cómputo y Computación Paralela</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            float: left;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        h3 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modelos de Arquitecturas de Cómputo y Computación Paralela</h1>
+        <p>Información sobre arquitecturas de cómputo, organización de procesadores, computación paralela y sistemas de memoria.</p>
+    </header>
+    <nav>
+        <a href="#organizacion-procesador">Organización del Procesador</a>
+        <a href="#registros">Registros de CPU</a>
+        <a href="#ciclo-instruccion">Ciclo de Instrucción</a>
+        <a href="#casos-cpu">Casos de CPU Reales</a>
+        <a href="#chipset">Chipset</a>
+        <a href="#aplicaciones">Aplicaciones</a>
+        <a href="#ambientes-servicio">Ambientes de Servicio</a>
+        <a href="#computacion-paralela">Computación Paralela</a>
+        <a href="#memoria">Sistemas de Memoria</a>
+    </nav>
+    <main>
+        <!-- Organización del Procesador -->
+        <section id="organizacion-procesador">
+            <h2>2.1 Organización del Procesador</h2>
+            <p>
+                La organización del procesador se refiere a cómo se estructura internamente para ejecutar instrucciones. Está compuesta por varias unidades funcionales que incluyen la unidad de control, la ALU (unidad lógica y aritmética), y los registros, entre otros. 
+            </p>
+        </section>
+<!-- Modelos de Arquitectura de Cómputo -->
+        <section id="modelos-arquitectura">
+            <h2>1.1 Modelos de Arquitectura de Cómputo</h2>
+            <p>Existen diversas arquitecturas de cómputo que han evolucionado con el tiempo, adaptándose a las necesidades de los sistemas modernos.</p>
+
+            <h3>1.1.1 Clásicas</h3>
+            <p>Las arquitecturas clásicas incluyen modelos como la arquitectura de von Neumann, que establece una separación entre la memoria y la unidad de procesamiento.</p>
+
+            <h3>1.1.2 Segmentadas</h3>
+            <p>Las arquitecturas segmentadas son aquellas en las que las operaciones se dividen en distintas etapas o segmentos para aumentar la eficiencia.</p>
+
+            <h3>1.1.3 De Multiprocesamiento</h3>
+            <p>Las arquitecturas de multiprocesamiento permiten que múltiples procesadores trabajen simultáneamente en tareas independientes o en paralelo para mejorar el rendimiento.</p>
+        </section>
+
+        <!-- Análisis de los Componentes -->
+        <section id="analisis-componentes">
+            <h2>1.2 Análisis de los Componentes</h2>
+            <p>Un análisis detallado de los componentes fundamentales de los sistemas de cómputo permite comprender su funcionamiento y diseño.</p>
+            
+            <h3>1.2.1 Arquitecturas</h3>
+            <p>Las arquitecturas de un sistema son las estructuras que definen cómo interactúan sus componentes, como la unidad central de procesamiento, la memoria y los buses.</p>
+            
+            <h4>1.2.1.1 Unidad Central de Procesamiento</h4>
+            <p>La Unidad Central de Procesamiento (CPU) es el corazón del sistema de cómputo, donde se realizan todas las operaciones de procesamiento.</p>
+
+            <h4>1.2.1.2 Unidad Aritmética Lógica</h4>
+            <p>La ALU es una parte de la CPU encargada de realizar operaciones aritméticas y lógicas sobre los datos que maneja el procesador.</p>
+
+            <h4>1.2.1.3 Registros</h4>
+            <p>Los registros son pequeñas ubicaciones de almacenamiento dentro del procesador que se utilizan para almacenar datos temporales.</p>
+
+            <h4>1.2.1.4 Buses</h4>
+            <p>Los buses son canales de comunicación que permiten la transferencia de datos entre diferentes componentes del sistema, como la memoria y los dispositivos de entrada/salida.</p>
+
+            <h3>1.2.2 Memoria</h3>
+            <p>La memoria es un componente esencial para almacenar instrucciones y datos. Existen varios tipos, cada uno con diferentes características y velocidades de acceso.</p>
+
+            <h4>1.2.2.1 Conceptos Básicos del Manejo de la Memoria</h4>
+            <p>El manejo de la memoria implica la asignación, acceso y protección de los datos y programas en el sistema de cómputo.</p>
+
+            <h4>1.2.2.2 Memoria Principal</h4>
+            <p>La memoria principal (RAM) es la memoria de acceso rápido que almacena los datos y programas en ejecución.</p>
+
+            <h4>1.2.2.3 Memoria Caché</h4>
+            <p>La memoria caché es una memoria más rápida y de menor capacidad que almacena datos a los que se accede frecuentemente para acelerar el rendimiento.</p>
+
+            <h3>1.2.3 Manejo de la Entrada/Salida</h3>
+            <p>El manejo de entrada y salida permite la comunicación entre el procesador y los dispositivos periféricos como teclados, pantallas y discos.</p>
+
+            <h4>1.2.3.1 Módulos de Entrada/Salida</h4>
+            <p>Son circuitos diseñados para gestionar la comunicación entre el procesador y los dispositivos de entrada/salida.</p>
+
+            <h4>1.2.3.2 Entrada/Salida Programada</h4>
+            <p>En la entrada/salida programada, el procesador controla directamente la transferencia de datos entre los dispositivos de E/S y la memoria.</p>
+
+            <h4>1.2.3.3 Entrada/Salida Mediante Interrupciones</h4>
+            <p>En la E/S mediante interrupciones, el procesador interrumpe su ejecución para atender eventos de entrada/salida, mejorando la eficiencia.</p>
+
+            <h4>1.2.3.4 Acceso Directo a Memoria</h4>
+            <p>El acceso directo a memoria (DMA) permite que los dispositivos de entrada/salida accedan directamente a la memoria sin intervención del procesador.</p>
+
+            <h4>1.2.3.5 Canales y Procesadores de Entrada/Salida</h4>
+            <p>Los canales y procesadores de entrada/salida son responsables de gestionar y realizar operaciones de E/S de manera más eficiente.</p>
+
+            <h3>1.2.4 Buses</h3>
+            <p>El bus es el medio de comunicación entre los diferentes componentes de la computadora. Hay varios tipos de buses, y cada uno tiene funciones específicas.</p>
+
+            <h4>1.2.4.1 Tipos de Buses</h4>
+            <p>Los buses pueden clasificarse en buses de datos, buses de direcciones y buses de control, según su función en el sistema.</p>
+
+            <h4>1.2.4.2 Estructura de los Buses</h4>
+            <p>La estructura de un bus determina cómo se organiza y transmite la información entre los componentes del sistema.</p>
+
+            <h4>1.2.4.3 Jerarquías de Buses</h4>
+            <p>Las jerarquías de buses se refieren a cómo se organizan los buses de diferentes velocidades para mejorar la eficiencia en la transferencia de datos.</p>
+
+            <h3>1.2.5 Interrupciones</h3>
+            <p>Las interrupciones permiten que el procesador atienda eventos fuera de la secuencia normal de ejecución, mejorando la eficiencia en sistemas multitarea.</p>
+        </section>
+
+        <!-- Registros de CPU -->
+        <section id="registros">
+            <h2>2.2 Estructura de Registros</h2>
+            <p>Los registros son pequeñas ubicaciones de almacenamiento dentro del procesador que contienen datos temporales para la ejecución de instrucciones.</p>
+            
+            <h3>2.2.1 Registros visibles para el usuario</h3>
+            <p>Estos registros son accesibles por el programa y pueden ser utilizados para almacenar valores intermedios durante la ejecución de instrucciones.</p>
+
+            <h3>2.2.2 Registros de control y de estados</h3>
+            <p>Los registros de control contienen bits que controlan las operaciones del procesador, mientras que los registros de estado almacenan información sobre el estado de las operaciones.</p>
+
+            <h3>2.2.3 Ejemplos de registros de CPU reales</h3>
+            <p>Ejemplos de registros reales son el registro de acumulador, el registro de índice, y el registro de contador de programa (PC).</p>
+        </section>
+
+        <!-- Ciclo de Instrucción -->
+        <section id="ciclo-instruccion">
+            <h2>2.3 El Ciclo de Instrucción</h2>
+            <p>
+                El ciclo de instrucción es el proceso mediante el cual el procesador obtiene, decodifica y ejecuta instrucciones. El ciclo puede desglosarse en las fases Fetch, Decode y Execute.
+            </p>
+            
+            <h3>2.3.1 Ciclo Fetch-Decode-Execute</h3>
+            <p>
+                El ciclo comienza con la búsqueda de la instrucción desde la memoria (Fetch), seguida por su decodificación (Decode), y finalmente la ejecución de la operación (Execute).
+            </p>
+
+            <h3>2.3.2 Segmentación de Instrucciones</h3>
+            <p>
+                La segmentación permite dividir el ciclo de instrucción en varias etapas que pueden superponerse, aumentando la eficiencia al procesar varias instrucciones a la vez.
+            </p>
+
+            <h3>2.3.3 Conjunto de Instrucciones, Características y Funciones</h3>
+            <p>
+                Un conjunto de instrucciones define las operaciones que un procesador puede realizar. Estas incluyen operaciones aritméticas, lógicas, y de control de flujo, entre otras.
+            </p>
+
+            <h3>2.3.4 Modos de Direccionamiento</h3>
+            <p>
+                Los modos de direccionamiento determinan cómo se localizan los operandos de una instrucción en la memoria, y pueden incluir modos como el inmediato, directo, indirecto, entre otros.
+            </p>
+        </section>
+
+        <!-- Casos de estudio de CPU reales -->
+        <section id="casos-cpu">
+            <h2>2.4 Casos de Estudio de CPU Reales</h2>
+            <p>
+                Los procesadores modernos, como los de Intel y ARM, implementan distintas arquitecturas con características específicas de ejecución en paralelo, eficiencia energética y manejo de múltiples hilos.
+            </p>
+        </section>
+
+        <!-- Chipset -->
+        <section id="chipset">
+            <h2>3.1 Chipset</h2>
+            <p>
+                El chipset es un conjunto de circuitos integrados que controlan la comunicación entre los componentes del sistema, como la CPU, la memoria y los dispositivos de entrada/salida.
+            </p>
+            
+            <h3>3.1.1 Unidad de Procesamiento</h3>
+            <p>La unidad de procesamiento dentro del chipset gestiona las instrucciones y las operaciones aritméticas y lógicas necesarias.</p>
+            
+            <h3>3.1.2 Controlador del Bus</h3>
+            <p>El controlador del bus gestiona la transferencia de datos entre el procesador y otros componentes como la memoria y los dispositivos periféricos.</p>
+
+            <h3>3.1.3 Puertas de Entrada/Salida</h3>
+            <p>Las puertas de entrada/salida gestionan la comunicación entre el procesador y los dispositivos externos, como el teclado o la pantalla.</p>
+
+            <h3>3.1.4 Controlador de Interrupciones</h3>
+            <p>Este controlador gestiona las señales de interrupción que permiten que el procesador deje de ejecutar la tarea actual para atender otras prioridades.</p>
+
+            <h3>3.1.5 Controlador de Acceso Directo a Memoria</h3>
+            <p>Este controlador permite que los dispositivos accedan a la memoria sin intervención directa del procesador, mejorando la eficiencia en el manejo de grandes volúmenes de datos.</p>
+
+            <h3>3.1.6 Circuitos de Temporización</h3>
+            <p>Los circuitos de temporización generan las señales de sincronización necesarias para coordinar las operaciones de los diferentes componentes del sistema.</p>
+
+            <h3>3.1.7 Circuitos de Control</h3>
+            <p>Los circuitos de control interpretan las señales de la unidad de control y coordinan las operaciones del sistema.</p>
+
+            <h3>3.1.8 Controladores de Video</h3>
+            <p>El controlador de video es responsable de la conversión de datos gráficos y su envío a la pantalla para su visualización.</p>
+        </section>
+
+        <!-- Aplicaciones -->
+        <section id="aplicaciones">
+            <h2>3.2 Aplicaciones</h2>
+            <h3>3.2.1 Entrada/Salida</h3>
+            <p>La gestión eficiente de las entradas y salidas es fundamental para optimizar el rendimiento de los sistemas computacionales.</p>
+
+            <h3>3.2.2 Almacenamiento</h3>
+            <p>El almacenamiento de datos es crucial, y los sistemas modernos utilizan almacenamiento en discos duros, SSD, y almacenamiento en la nube.</p>
+
+            <h3>3.2.3 Fuentes de Alimentación</h3>
+            <p>La fuente de alimentación convierte la energía eléctrica en la forma adecuada para alimentar todos los componentes del sistema.</p>
+        </section>
+
+        <!-- Ambientes de servicio -->
+        <section id="ambientes-servicio">
+            <h2>3.3 Ambientes de Servicio</h2>
+            <h3>3.3.1 Negocios</h3>
+            <p>La computación paralela es utilizada en entornos de negocios para análisis de datos masivos y toma de decisiones en tiempo real.</p>
+
+            <h3>3.3.2 Industria</h3>
+            <p>En la industria, la computación paralela ayuda en la automatización de procesos y la mejora de la eficiencia operativa.</p>
+
+            <h3>3.3.3 Comercio Electrónico</h3>
+            <p>El comercio electrónico se beneficia de la computación paralela para gestionar grandes volúmenes de transacciones y personalizar experiencias de usuario.</p>
+        </section>
+
+        <!-- Computación Paralela -->
+        <section id="computacion-paralela">
+            <h2>4.1 Aspectos Básicos de la Computación Paralela</h2>
+            <p>
+                La computación paralela busca dividir una tarea en sub-tareas más pequeñas, que se ejecutan simultáneamente, lo que aumenta el rendimiento y reduce el tiempo de ejecución de tareas complejas.
+            </p>
+            
+            <h3>4.2 Tipos de Computación Paralela</h3>
+            <h4>4.2.1 Clasificación</h4>
+            <p>La computación paralela se clasifica según cómo se distribuyen las tareas entre los procesadores: SIMD, MIMD, entre otras.</p>
+
+            <h4>4.2.2 Arquitectura de Computadores Secuenciales</h4>
+            <p>Los sistemas secuenciales siguen una secuencia de instrucciones de manera lineal, limitando la velocidad para tareas paralelas complejas.</p>
+
+            <h4>4.2.3 Organización de Direcciones de Memoria</h4>
+            <p>Se puede organizar la memoria en sistemas compartidos o distribuidos, según el tipo de arquitectura utilizada.</p>
+
+            <h3>4.3 Sistema de Memoria Compartida</h3>
+            <h4>4.3.1.1 Redes de Medio Compartido</h4>
+            <p>Las redes de medio compartido permiten que varios procesadores accedan a la memoria a través de un solo canal de comunicación.</p>
+
+            <h4>4.3.1.2 Redes Conmutadas</h4>
+            <p>Las redes conmutadas reducen los conflictos de acceso mediante interconexiones más sofisticadas entre los procesadores.</p>
+
+            <h3>4.4 Sistemas de Memoria Distribuida</h3>
+            <p>En los sistemas de memoria distribuida, cada procesador tiene su propia memoria local, lo que mejora la eficiencia y escalabilidad.</p>
+
+            <h3>4.5 Casos de Estudio</h3>
+            <p>Los clústeres de servidores, supercomputadoras y GPUs son ejemplos de sistemas paralelos que aprovechan las arquitecturas distribuidas para realizar grandes simulaciones y procesamiento de datos en tiempo real.</p>
+        </section>
+
+       <footer>
+            <p>&copy; 2024 Computación y Tecnología. Todos los derechos reservados.</p>
+            <p><a href="https://drive.google.com/drive/folders/1-O3mKKAMorzzQiwcy0sMiNxCfoFpvt7A?usp=share_link" target="_blank">LAS PRACTICAS REALIZADAS ESTE ES EL LINK DEL DOCUMENTO</a></p>
+        </footer>
+    </main>
+</body>
+</html>
